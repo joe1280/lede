@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-CI
+name: OpenWrt-ar7xx
 
 on:
   push:
@@ -97,16 +97,16 @@ jobs:
           # 
 
           # 编译x64固件:
-          # cat >> .config <<EOF
-          # CONFIG_TARGET_x86=y
-          # CONFIG_TARGET_x86_64=y
-          # CONFIG_TARGET_x86_64_Generic=y
-          # EOF
-            cat >> .config <<EOF
-            CONFIG_TARGET_BOARD="ar71xx"
-            CONFIG_TARGET_ar71xx_generic=y
-            CONFIG_TARGET_ar71xx_generic_Default=y
-            EOF
+           cat >> .config <<EOF
+           CONFIG_TARGET_ar71xx=y
+           CONFIG_TARGET_ar71xx=y
+           CONFIG_TARGET_ar71xx_Generic=y
+           EOF
+          #  cat >> .config <<EOF
+          #  CONFIG_TARGET_BOARD="ar71xx"
+          #  CONFIG_TARGET_ar71xx_generic=y
+          #  CONFIG_TARGET_ar71xx_generic_Default=y
+          #  EOF
           # 固件压缩:
            cat >> .config <<EOF
            CONFIG_TARGET_IMAGES_GZIP=y
