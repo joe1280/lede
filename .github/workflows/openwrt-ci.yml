@@ -16,7 +16,7 @@
 
 
 
-name: k3
+name: ar7xx
 
 
 
@@ -105,12 +105,9 @@ jobs:
           touch ./.config
 
           cat >> .config <<EOF
-
-          CONFIG_TARGET_bcm53xx=y
-
-          CONFIG_TARGET_bcm53xx_DEVICE_phicomm-k3=y
-
-          CONFIG_TARGET_BOARD="bcm53xx"
+          CONFIG_TARGET_ar71xx=y
+          CONFIG_TARGET_ar71xx_generic=y
+          CONFIG_TARGET_ar71xx_generic_Generic=y
 
           # CONFIG_FEED_luci is not set
 
