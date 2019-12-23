@@ -22,11 +22,11 @@ name: ar7xx
 
 on:
 
-  push:
+#  push:
 
-    branches: 
+#    branches: 
 
-      - master
+#      - master
 
   # schedule:
 
