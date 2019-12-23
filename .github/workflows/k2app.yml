@@ -22,11 +22,11 @@ name: k2app
 
 on:
 
-#  push:
+  push:
 
-#    branches: 
+    branches: 
 
-#      - master
+      - master
 
   # schedule:
 
@@ -158,11 +158,11 @@ jobs:
 
           # 固件压缩:
 
-          # cat >> .config <<EOF
+           cat >> .config <<EOF
 
-          # CONFIG_TARGET_IMAGES_GZIP=y
+           CONFIG_TARGET_IMAGES_GZIP=y
 
-          # EOF
+           EOF
 
           # 编译UEFI固件:
 
@@ -184,21 +184,21 @@ jobs:
 
           # 多文件系统支持:
 
-          # cat >> .config <<EOF
+           cat >> .config <<EOF
 
-          # CONFIG_PACKAGE_kmod-fs-nfs=y
+           CONFIG_PACKAGE_kmod-fs-nfs=y
 
-          # CONFIG_PACKAGE_kmod-fs-nfs-common=y
+           CONFIG_PACKAGE_kmod-fs-nfs-common=y
 
-          # CONFIG_PACKAGE_kmod-fs-nfs-v3=y
+           CONFIG_PACKAGE_kmod-fs-nfs-v3=y
 
-          # CONFIG_PACKAGE_kmod-fs-nfs-v4=y
+           CONFIG_PACKAGE_kmod-fs-nfs-v4=y
 
-          # CONFIG_PACKAGE_kmod-fs-ntfs=y
+           CONFIG_PACKAGE_kmod-fs-ntfs=y
 
-          # CONFIG_PACKAGE_kmod-fs-squashfs=y
+           CONFIG_PACKAGE_kmod-fs-squashfs=y
 
-          # EOF
+           EOF
 
           # USB3.0支持:
 
@@ -236,7 +236,7 @@ jobs:
 
           # CONFIG_PACKAGE_luci-app-minidlna=y
 
-          # CONFIG_PACKAGE_luci-app-openvpn=y
+           CONFIG_PACKAGE_luci-app-openvpn=y
 
           # CONFIG_PACKAGE_luci-app-openvpn-server=y
 
@@ -268,13 +268,13 @@ jobs:
 
           # LuCI主题:
 
-          # cat >> .config <<EOF
+           cat >> .config <<EOF
 
-          # CONFIG_PACKAGE_luci-theme-argon=y
+           CONFIG_PACKAGE_luci-theme-argon=y
 
-          # CONFIG_PACKAGE_luci-theme-netgear=y
+           CONFIG_PACKAGE_luci-theme-netgear=y
 
-          # EOF
+           EOF
 
           # 常用软件包:
 
